@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: "codespace"
+      POSTGRES_PASSWORD: "123456"
+      POSTGRES_DB: "db_webhook"
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init_db.sql
+
+# docker compose up -d (iniciar o docker-compose.yml e subir um banco postgresql)
+#  docker compose down -v (remover banco postgresql)
