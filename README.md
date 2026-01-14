@@ -2,7 +2,7 @@
 
 # Webhook Status Node.js
 
-Este projeto é uma API simples desenvolvida em Node.js utilizando o framework Express para receber e armazenar notificações de status via webhooks num banco de dados PostgreSQL.
+Este projeto é uma API desenvolvida em Node.js utilizando o framework Express para receber e armazenar notificações de status via webhooks num banco de dados PostgreSQL.
 
 ## 🚀 Funcionalidades
 
